@@ -28,22 +28,27 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           KV_ID: "7d9e399b548e4a5691d34feb6030dbc7"
         run: |
-          # 1. 静态上传核心文件
-          echo "Uploading core files..."
-          npx wrangler kv:key put "hero_list" --path=data/hero/list.json --namespace-id=$KV_ID
-          npx wrangler kv:key put "item_list" --path=data/item/list.json --namespace-id=$KV_ID
-          npx wrangler kv:key put "summoner_list" --path=data/summoner/list.json --namespace-id=$KV_ID
-          npx wrangler kv:key put "hero_images" --path=data/hero_images.json --namespace-id=$KV_ID
-          npx wrangler kv:key put "item_images" --path=data/item_images.json --namespace-id=$KV_ID
-          npx wrangler kv:key put "summoner_images" --path=data/summoner_images.json --namespace-id=$KV_ID
+          # 设置环境变量，这样就不需要在每个命令里重复写了
+          export CLOUDFLARE_API_TOKEN=${{ secrets.CLOUDFLARE_API_TOKEN }}
+          export CLOUDFLARE_ACCOUNT_ID=${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          KV_ID="7d9e399b548e4a5691d34feb6030dbc7"
 
-          # 2. 循环上传英雄详情
-          echo "Starting loop for hero details..."
+          echo "🚀 Starting upload..."
+
+          # 1. 静态文件
+          npx wrangler kv:key put --namespace-id=$KV_ID "hero_list" --path=data/hero/list.json
+          npx wrangler kv:key put --namespace-id=$KV_ID "item_list" --path=data/item/list.json
+          npx wrangler kv:key put --namespace-id=$KV_ID "summoner_list" --path=data/summoner/list.json
+          npx wrangler kv:key put --namespace-id=$KV_ID "hero_images" --path=data/hero_images.json
+          npx wrangler kv:key put --namespace-id=$KV_ID "item_images" --path=data/item_images.json
+          npx wrangler kv:key put --namespace-id=$KV_ID "summoner_images" --path=data/summoner_images.json
+
+          # 2. 英雄循环
           for file in data/hero/*.json; do
             filename=$(basename "$file" .json)
-            if [ "$filename" = "list" ]; then
-              continue
-            fi
+            if [ "$filename" = "list" ]; then continue; fi
+            
             echo "Uploading hero: $filename"
-            npx wrangler kv:key put "$filename" --path="$file" --namespace-id=$KV_ID
+            # 严格按照: 命令 -> 空间ID -> 键名 -> 路径 的顺序
+            npx wrangler kv:key put --namespace-id=$KV_ID "$filename" --path="$file"
           done
