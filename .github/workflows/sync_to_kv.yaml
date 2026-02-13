@@ -25,26 +25,16 @@ jobs:
           packageManager: npm
           # 使用 | 符号编写多行 Bash 脚本
           command: |
-            echo "开始上传核心数据文件..."
             kv:key put "hero_list" --path=data/hero/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
             kv:key put "item_list" --path=data/item/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
             kv:key put "summoner_list" --path=data/summoner/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
             kv:key put "hero_images" --path=data/hero_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
             kv:key put "item_images" --path=data/item_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
             kv:key put "summoner_images" --path=data/summoner_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-
-            echo "开始遍历 data/hero/ 目录下的英雄详情..."
-            count=0
             for file in data/hero/*.json; do
               filename=$(basename "$file" .json)
-              
               if [ "$filename" = "list" ]; then
                 continue
               fi
               kv:key put "$filename" --path="$file" --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-              
-              count=$((count+1))
-              echo "已同步英雄: $filename"
             done
-
-            echo "同步完成！共上传了 $count 个英雄详情文件。"
