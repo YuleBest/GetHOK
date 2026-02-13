@@ -1,0 +1,22 @@
+{
+  "name": "get-hok",
+  "version": "1.0.0",
+  "description": "Crawler for Honor of Kings data",
+  "scripts": {
+    "crawl": "tsx scripts/update.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.1.0",
+    "iconv-lite": "^0.6.3"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^1.0.0",
+    "@types/fs-extra": "^11.0.1",
+    "@types/iconv-lite": "^0.0.1",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
