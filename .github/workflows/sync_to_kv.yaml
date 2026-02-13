@@ -2,42 +2,36 @@ name: Sync HOK Data to Cloudflare KV
 
 on:
   workflow_run:
-    workflows: ["crawl"] # 确保这里和你爬虫文件的 name: 字段一致
+    workflows: ["crawl"]
     types:
       - completed
-  workflow_dispatch: # 支持手动点击 Run workflow 按钮
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    # 只有前置爬虫成功，或者是手动触发时才执行
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          # 必须设置为 0，否则 git diff 找不到历史记录，增量会失效
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Sync Data to KV (Pure Shell)
+      - name: Sync Data to KV (Smart Incremental)
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           KV_ID: "7d9e399b548e4a5691d34feb6030dbc7"
         run: |
-          export CLOUDFLARE_API_TOKEN=${{ secrets.CLOUDFLARE_API_TOKEN }}
-          export CLOUDFLARE_ACCOUNT_ID=${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          KV_ID="7d9e399b548e4a5691d34feb6030dbc7"
-
-          echo "🚀 使用 Wrangler 4.x 语法开始同步..."
-
-          # 核心改动：kv:key put 变成 kv key put
-          # 核心改动：--namespace-id 尽量放在前面
-
-          # 1. 静态文件
+          # 1. 静态列表文件（这几个文件较小且是索引，建议保持全量同步）
+          echo "📤 Syncing core list files..."
           npx wrangler kv key put --namespace-id=$KV_ID "hero_list" --path=data/hero/list.json --remote
           npx wrangler kv key put --namespace-id=$KV_ID "item_list" --path=data/item/list.json --remote
           npx wrangler kv key put --namespace-id=$KV_ID "summoner_list" --path=data/summoner/list.json --remote
@@ -45,11 +39,26 @@ jobs:
           npx wrangler kv key put --namespace-id=$KV_ID "item_images" --path=data/item_images.json --remote
           npx wrangler kv key put --namespace-id=$KV_ID "summoner_images" --path=data/summoner_images.json --remote
 
-          # 2. 英雄循环
-          for file in data/hero/*.json; do
-            filename=$(basename "$file" .json)
-            if [ "$filename" = "list" ]; then continue; fi
-            
-            echo "Uploading hero: $filename"
-            npx wrangler kv key put --namespace-id=$KV_ID "$filename" --path="$file" --remote
+          # 2. 英雄详情逻辑
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "💡 Manual trigger: Full sync mode."
+            files_to_sync=$(find data/hero -name "*.json")
+          else
+            echo "⚡ Auto trigger: Incremental sync mode."
+            # 只获取 HEAD 和上一个 commit 之间有变动的 json 文件
+            files_to_sync=$(git diff --name-only HEAD^ HEAD -- data/hero/*.json)
+          fi
+
+          # 3. 执行循环同步
+          count=0
+          for file in $files_to_sync; do
+            # 过滤掉 list.json 和已被删除的文件
+            if [[ -f "$file" && "$file" != *"list.json" ]]; then
+              filename=$(basename "$file" .json)
+              echo "🚀 Syncing hero detail: $filename"
+              npx wrangler kv key put --namespace-id=$KV_ID "$filename" --path="$file" --remote
+              count=$((count+1))
+            fi
           done
+
+          echo "✅ All done! Updated $count hero details."
