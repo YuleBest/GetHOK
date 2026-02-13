@@ -38,12 +38,12 @@ jobs:
           # 核心改动：--namespace-id 尽量放在前面
 
           # 1. 静态文件
-          npx wrangler kv key put --namespace-id=$KV_ID "hero_list" --path=data/hero/list.json
-          npx wrangler kv key put --namespace-id=$KV_ID "item_list" --path=data/item/list.json
-          npx wrangler kv key put --namespace-id=$KV_ID "summoner_list" --path=data/summoner/list.json
-          npx wrangler kv key put --namespace-id=$KV_ID "hero_images" --path=data/hero_images.json
-          npx wrangler kv key put --namespace-id=$KV_ID "item_images" --path=data/item_images.json
-          npx wrangler kv key put --namespace-id=$KV_ID "summoner_images" --path=data/summoner_images.json
+          npx wrangler kv key put --namespace-id=$KV_ID "hero_list" --path=data/hero/list.json --remote
+          npx wrangler kv key put --namespace-id=$KV_ID "item_list" --path=data/item/list.json --remote
+          npx wrangler kv key put --namespace-id=$KV_ID "summoner_list" --path=data/summoner/list.json --remote
+          npx wrangler kv key put --namespace-id=$KV_ID "hero_images" --path=data/hero_images.json --remote
+          npx wrangler kv key put --namespace-id=$KV_ID "item_images" --path=data/item_images.json --remote
+          npx wrangler kv key put --namespace-id=$KV_ID "summoner_images" --path=data/summoner_images.json --remote
 
           # 2. 英雄循环
           for file in data/hero/*.json; do
@@ -51,5 +51,5 @@ jobs:
             if [ "$filename" = "list" ]; then continue; fi
             
             echo "Uploading hero: $filename"
-            npx wrangler kv key put --namespace-id=$KV_ID "$filename" --path="$file"
+            npx wrangler kv key put --namespace-id=$KV_ID "$filename" --path="$file" --remote
           done
