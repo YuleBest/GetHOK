@@ -17,24 +17,33 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Deploy to Cloudflare KV
-        uses: cloudflare/wrangler-action@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          packageManager: npm
-          # 使用 | 符号编写多行 Bash 脚本
-          command: |
-            kv:key put "hero_list" --path=data/hero/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-            kv:key put "item_list" --path=data/item/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-            kv:key put "summoner_list" --path=data/summoner/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-            kv:key put "hero_images" --path=data/hero_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-            kv:key put "item_images" --path=data/item_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-            kv:key put "summoner_images" --path=data/summoner_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-            for file in data/hero/*.json; do
-              filename=$(basename "$file" .json)
-              if [ "$filename" = "list" ]; then
-                continue
-              fi
-              kv:key put "$filename" --path="$file" --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
-            done
+          node-version: 20
+
+      - name: Sync Data to KV (Pure Shell)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          KV_ID: "7d9e399b548e4a5691d34feb6030dbc7"
+        run: |
+          # 1. 静态上传核心文件
+          echo "Uploading core files..."
+          npx wrangler kv:key put "hero_list" --path=data/hero/list.json --namespace-id=$KV_ID
+          npx wrangler kv:key put "item_list" --path=data/item/list.json --namespace-id=$KV_ID
+          npx wrangler kv:key put "summoner_list" --path=data/summoner/list.json --namespace-id=$KV_ID
+          npx wrangler kv:key put "hero_images" --path=data/hero_images.json --namespace-id=$KV_ID
+          npx wrangler kv:key put "item_images" --path=data/item_images.json --namespace-id=$KV_ID
+          npx wrangler kv:key put "summoner_images" --path=data/summoner_images.json --namespace-id=$KV_ID
+
+          # 2. 循环上传英雄详情
+          echo "Starting loop for hero details..."
+          for file in data/hero/*.json; do
+            filename=$(basename "$file" .json)
+            if [ "$filename" = "list" ]; then
+              continue
+            fi
+            echo "Uploading hero: $filename"
+            npx wrangler kv:key put "$filename" --path="$file" --namespace-id=$KV_ID
+          done
