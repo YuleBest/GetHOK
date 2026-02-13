@@ -28,20 +28,22 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           KV_ID: "7d9e399b548e4a5691d34feb6030dbc7"
         run: |
-          # 设置环境变量，这样就不需要在每个命令里重复写了
           export CLOUDFLARE_API_TOKEN=${{ secrets.CLOUDFLARE_API_TOKEN }}
           export CLOUDFLARE_ACCOUNT_ID=${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           KV_ID="7d9e399b548e4a5691d34feb6030dbc7"
 
-          echo "🚀 Starting upload..."
+          echo "🚀 使用 Wrangler 4.x 语法开始同步..."
+
+          # 核心改动：kv:key put 变成 kv key put
+          # 核心改动：--namespace-id 尽量放在前面
 
           # 1. 静态文件
-          npx wrangler kv:key put --namespace-id=$KV_ID "hero_list" --path=data/hero/list.json
-          npx wrangler kv:key put --namespace-id=$KV_ID "item_list" --path=data/item/list.json
-          npx wrangler kv:key put --namespace-id=$KV_ID "summoner_list" --path=data/summoner/list.json
-          npx wrangler kv:key put --namespace-id=$KV_ID "hero_images" --path=data/hero_images.json
-          npx wrangler kv:key put --namespace-id=$KV_ID "item_images" --path=data/item_images.json
-          npx wrangler kv:key put --namespace-id=$KV_ID "summoner_images" --path=data/summoner_images.json
+          npx wrangler kv key put --namespace-id=$KV_ID "hero_list" --path=data/hero/list.json
+          npx wrangler kv key put --namespace-id=$KV_ID "item_list" --path=data/item/list.json
+          npx wrangler kv key put --namespace-id=$KV_ID "summoner_list" --path=data/summoner/list.json
+          npx wrangler kv key put --namespace-id=$KV_ID "hero_images" --path=data/hero_images.json
+          npx wrangler kv key put --namespace-id=$KV_ID "item_images" --path=data/item_images.json
+          npx wrangler kv key put --namespace-id=$KV_ID "summoner_images" --path=data/summoner_images.json
 
           # 2. 英雄循环
           for file in data/hero/*.json; do
@@ -49,6 +51,5 @@ jobs:
             if [ "$filename" = "list" ]; then continue; fi
             
             echo "Uploading hero: $filename"
-            # 严格按照: 命令 -> 空间ID -> 键名 -> 路径 的顺序
-            npx wrangler kv:key put --namespace-id=$KV_ID "$filename" --path="$file"
+            npx wrangler kv key put --namespace-id=$KV_ID "$filename" --path="$file"
           done
