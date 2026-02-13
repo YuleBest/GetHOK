@@ -23,11 +23,10 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           packageManager: npm
-          # 直接写子命令，使用最新的 HOK_DATA 绑定
           command: |
-            kv:key put --binding=HOK_DATA "hero_list" data/hero/list.json --path
-            kv:key put --binding=HOK_DATA "item_list" data/item/list.json --path
-            kv:key put --binding=HOK_DATA "summoner_list" data/summoner/list.json --path
-            kv:key put --binding=HOK_DATA "hero_images" data/hero_images.json --path
-            kv:key put --binding=HOK_DATA "item_images" data/item_images.json --path
-            kv:key put --binding=HOK_DATA "summoner_images" data/summoner_images.json --path
+            kv:key put --binding=HOK_DATA "hero_list" --path=data/hero/list.json
+            kv:key put --binding=HOK_DATA "item_list" --path=data/item/list.json
+            kv:key put --binding=HOK_DATA "summoner_list" --path=data/summoner/list.json
+            kv:key put --binding=HOK_DATA "hero_images" --path=data/hero_images.json
+            kv:key put --binding=HOK_DATA "item_images" --path=data/item_images.json
+            kv:key put --binding=HOK_DATA "summoner_images" --path=data/summoner_images.json
