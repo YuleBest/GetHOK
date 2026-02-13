@@ -22,7 +22,8 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          # 批量上传指令
+          # 强制指定使用 npm 避免 pnpm 找不到的错误
+          packageManager: npm
           command: |
             wrangler kv:key put --binding=WOK_DATA "hero_list" data/hero/list.json --path
             wrangler kv:key put --binding=WOK_DATA "item_list" data/item/list.json --path
