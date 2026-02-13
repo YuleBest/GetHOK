@@ -22,12 +22,12 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          # 强制指定使用 npm 避免 pnpm 找不到的错误
           packageManager: npm
+          # 直接写子命令，使用最新的 HOK_DATA 绑定
           command: |
-            wrangler kv:key put --binding=WOK_DATA "hero_list" data/hero/list.json --path
-            wrangler kv:key put --binding=WOK_DATA "item_list" data/item/list.json --path
-            wrangler kv:key put --binding=WOK_DATA "summoner_list" data/summoner/list.json --path
-            wrangler kv:key put --binding=WOK_DATA "hero_images" data/hero_images.json --path
-            wrangler kv:key put --binding=WOK_DATA "item_images" data/item_images.json --path
-            wrangler kv:key put --binding=WOK_DATA "summoner_images" data/summoner_images.json --path
+            kv:key put --binding=HOK_DATA "hero_list" data/hero/list.json --path
+            kv:key put --binding=HOK_DATA "item_list" data/item/list.json --path
+            kv:key put --binding=HOK_DATA "summoner_list" data/summoner/list.json --path
+            kv:key put --binding=HOK_DATA "hero_images" data/hero_images.json --path
+            kv:key put --binding=HOK_DATA "item_images" data/item_images.json --path
+            kv:key put --binding=HOK_DATA "summoner_images" data/summoner_images.json --path
