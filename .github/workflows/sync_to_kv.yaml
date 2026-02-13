@@ -23,10 +23,11 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           packageManager: npm
+          # 直接使用 Namespace ID 绕过配置文件的限制
           command: |
-            kv:key put --binding=HOK_DATA "hero_list" --path=data/hero/list.json
-            kv:key put --binding=HOK_DATA "item_list" --path=data/item/list.json
-            kv:key put --binding=HOK_DATA "summoner_list" --path=data/summoner/list.json
-            kv:key put --binding=HOK_DATA "hero_images" --path=data/hero_images.json
-            kv:key put --binding=HOK_DATA "item_images" --path=data/item_images.json
-            kv:key put --binding=HOK_DATA "summoner_images" --path=data/summoner_images.json
+            kv:key put "hero_list" --path=data/hero/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
+            kv:key put "item_list" --path=data/item/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
+            kv:key put "summoner_list" --path=data/summoner/list.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
+            kv:key put "hero_images" --path=data/hero_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
+            kv:key put "item_images" --path=data/item_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
+            kv:key put "summoner_images" --path=data/summoner_images.json --namespace-id=7d9e399b548e4a5691d34feb6030dbc7
