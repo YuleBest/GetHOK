@@ -64,5 +64,35 @@
     "summoner_name": "传送",
     "summoner_rank": "LV.30解锁",
     "summoner_description": "75秒CD：吟唱2秒后，将英雄传送到友方机关（包括被摧毁的防御塔）或小兵身边，传送期间会使用选中单位免疫伤害。任意方式取消【传送】，或使用传送阵30秒内释放【传送】，都会减少25秒技能冷却"
+  },
+  {
+    "summoner_id": 55553,
+    "summoner_name": "汇流为兵·辅助",
+    "summoner_rank": "LV.1解锁",
+    "summoner_description": "使用后立即减少50%全技能当前冷却时间，召唤元流古琴分别朝首个友方英雄/敌方英雄提供生命回复或法术伤害，可额外命中自身造成等额生命回复，100秒CD"
+  },
+  {
+    "summoner_id": 55551,
+    "summoner_name": "汇流为兵·法师",
+    "summoner_rank": "LV.1解锁",
+    "summoner_description": "使用后立即减少50%全技能当前冷却时间，召唤元流法器朝敌方英雄方向持续造成法术伤害与2秒30%减速效果，100秒CD"
+  },
+  {
+    "summoner_id": 55552,
+    "summoner_name": "汇流为兵·战坦",
+    "summoner_rank": "LV.1解锁",
+    "summoner_description": "使用后立即减少50%全技能当前冷却时间，召唤元流重盾朝首个被攻击的敌方英雄目标区域造物理伤害与0.5秒击飞效果，100秒CD"
+  },
+  {
+    "summoner_id": 55554,
+    "summoner_name": "汇流为兵·射手",
+    "summoner_rank": "LV.1解锁",
+    "summoner_description": "使用后立即减少50%全技能当前冷却时间，召唤元流重弩朝向敌方英雄造成3次物理伤害，首次攻击击退目标，100秒CD"
+  },
+  {
+    "summoner_id": 55555,
+    "summoner_name": "汇流为兵·刺客",
+    "summoner_rank": "LV.1解锁",
+    "summoner_description": "使用后立即减少50%全技能当前冷却时间，召唤元流双爪冲刺向目标英雄造成已损失生命值16%的真实伤害，且对沿途敌人造成物理伤害，100秒CD"
   }
 ]
