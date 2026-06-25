@@ -159,6 +159,47 @@
     "moss_id": 3662
   },
   {
+    "ename": 167,
+    "cname": "孙悟空",
+    "id_name": "sunwukong",
+    "life_list": [
+      {
+        "ename": 167,
+        "cname": "孙悟空"
+      },
+      {
+        "ename": 549,
+        "cname": "心魔六耳"
+      }
+    ],
+    "title": "齐天大圣",
+    "new_type": 0,
+    "hero_type": 4,
+    "skin_name": "齐天大圣|地狱火|西部大镖客|美猴王|至尊宝|全息碎影|大圣娶亲|零号·赤焰|孙行者|齐天大圣|神迹守卫|无相",
+    "moss_id": 4138
+  },
+  {
+    "ename": 549,
+    "cname": "心魔六耳",
+    "id_name": "xinmoliuer",
+    "life_list": [
+      {
+        "ename": 167,
+        "cname": "孙悟空"
+      },
+      {
+        "ename": 549,
+        "cname": "心魔六耳"
+      }
+    ],
+    "isShowHero": 1,
+    "title": "孙悟空命格",
+    "new_type": 0,
+    "hero_type": 1,
+    "skin_name": "心魔六耳",
+    "moss_id": 9166
+  },
+  {
     "ename": 120,
     "cname": "白起",
     "id_name": "baiqi",
@@ -497,16 +538,6 @@
     "hero_type2": 3,
     "skin_name": "圣骑之力|死亡骑士|狮心王|心灵战警|潮玩骑士王|追逃游戏|鸿运当头|动物派对|布丁狗之誓",
     "moss_id": 4121
-  },
-  {
-    "ename": 167,
-    "cname": "孙悟空",
-    "id_name": "sunwukong",
-    "title": "齐天大圣",
-    "new_type": 0,
-    "hero_type": 4,
-    "skin_name": "齐天大圣|地狱火|西部大镖客|美猴王|至尊宝|全息碎影|大圣娶亲|零号·赤焰|孙行者|齐天大圣|神迹守卫|无相",
-    "moss_id": 4138
   },
   {
     "ename": 168,
@@ -1389,7 +1420,7 @@
     "id_name": "dayu",
     "title": "鼎镇山河",
     "time": "2026.01.08",
-    "new_type": 1,
+    "new_type": 0,
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "鼎镇山河",
