@@ -195,7 +195,8 @@
     "isShowHero": 1,
     "title": "孙悟空命格",
     "new_type": 0,
-    "hero_type": 1,
+    "hero_type": 4,
+    "hero_type2": 1,
     "skin_name": "心魔六耳",
     "moss_id": 9166
   },
