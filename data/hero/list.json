@@ -7,7 +7,8 @@
     "new_type": 0,
     "hero_type": 3,
     "skin_name": "正义爆轰|地狱岩魂|无尽征程|寅虎·御盾|功夫炙烤|撼地雄心",
-    "moss_id": 3627
+    "moss_id": 3627,
+    "roles": "1|5"
   },
   {
     "ename": 106,
@@ -17,7 +18,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "恋之微风|万圣前夜|天鹅之梦|纯白花嫁|缤纷独角兽|丁香结|青蛇|音你心动|山海·琳琅生|时之魔女|秘证寻踪",
-    "moss_id": 3644
+    "moss_id": 3644,
+    "roles": "3"
   },
   {
     "ename": 107,
@@ -28,7 +30,8 @@
     "hero_type": 1,
     "hero_type2": 4,
     "skin_name": "苍天翔龙|忍●炎影|未来纪元|皇家上将|嘻哈天王|白执事|引擎之心|龙胆|淬星耀世|百木心枪|乘龙铭钟鼎",
-    "moss_id": 3661
+    "moss_id": 3661,
+    "roles": "2"
   },
   {
     "ename": 108,
@@ -39,7 +42,8 @@
     "hero_type": 2,
     "hero_type2": 1,
     "skin_name": "和平守望|金属风暴|龙骑士|进击墨子号|神迹守卫|降魔|黄金天蝎座",
-    "moss_id": 3547
+    "moss_id": 3547,
+    "roles": "3|5"
   },
   {
     "ename": 109,
@@ -50,7 +54,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "魅惑之狐|女仆咖啡|魅力维加斯|仙境爱丽丝|少女阿狸|热情桑巴|时之彼端|紫罗兰之誓|时之奇旅|青丘·九尾|灵卜魔法|愿照·众生和",
-    "moss_id": 3663
+    "moss_id": 3663,
+    "roles": "3"
   },
   {
     "ename": 110,
@@ -60,7 +65,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "王者独尊|摇滚巨星|暗夜贵公子|优雅恋人|白昼王子|玄雷天君",
-    "moss_id": 3680
+    "moss_id": 3680,
+    "roles": "3"
   },
   {
     "ename": 111,
@@ -70,7 +76,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "千金重弩|火炮千金|水果甜心|蔷薇恋人|杀手不太冷|末日机甲|沉稳之力|时之恋人|异界灵契|音你闪耀|乘龙问璇玑",
-    "moss_id": 3577
+    "moss_id": 3577,
+    "roles": "4"
   },
   {
     "ename": 112,
@@ -80,7 +87,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "机关造物|木偶奇遇记|福禄兄弟|电玩小子|星空梦想|狮舞东方|黑桃队长|乒乒小将|寅虎·瑞焰|时之奇旅|蔬乡物语|江户川柯南|班班快跑",
-    "moss_id": 3697
+    "moss_id": 3697,
+    "roles": "4"
   },
   {
     "ename": 113,
@@ -91,7 +99,8 @@
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "逍遥幻梦|鲤鱼之梦|蜃楼王|云端筑梦师|奇妙博物学|玄嵩|高山流水|天秀·幻梦|牧神诗旅|锦麟游梦",
-    "moss_id": 3594
+    "moss_id": 3594,
+    "roles": "5"
   },
   {
     "ename": 114,
@@ -102,7 +111,8 @@
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "暴走机关|英喵野望|绅士熊喵|天才门将|秘密基地|唤灵魔甲|电玩·爆裂旋风|鸭鸭历险记",
-    "moss_id": 3714
+    "moss_id": 3714,
+    "roles": "5"
   },
   {
     "ename": 115,
@@ -112,7 +122,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "叛逆吟游|金属狂潮|死亡摇滚|玩趣恶龙|天秀·音浪|燃音魔法",
-    "moss_id": 3611
+    "moss_id": 3611,
+    "roles": "3"
   },
   {
     "ename": 116,
@@ -123,7 +134,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "信念之刃|爱心护理|暗夜猫娘|致命风华|节奏热浪|迷踪丽影|化蝶舞",
-    "moss_id": 3731
+    "moss_id": 3731,
+    "roles": "2"
   },
   {
     "ename": 117,
@@ -134,7 +146,8 @@
     "hero_type": 1,
     "hero_type2": 3,
     "skin_name": "野蛮之锤|生化警戒|王者之锤|海滩丽影|超时空战士|聚星闪耀|春野之旅|戍鼓铭心|戍鼓铭心",
-    "moss_id": 3628
+    "moss_id": 3628,
+    "roles": "1|2"
   },
   {
     "ename": 118,
@@ -145,7 +158,8 @@
     "hero_type": 6,
     "hero_type2": 2,
     "skin_name": "逆流之时|未来旅行|天使之翼|妖精王|归虚梦演|天狼运算者|寅虎·展翼|小动物乐团|茶境仙",
-    "moss_id": 3645
+    "moss_id": 3645,
+    "roles": "5"
   },
   {
     "ename": 119,
@@ -156,7 +170,8 @@
     "hero_type": 2,
     "hero_type2": 1,
     "skin_name": "善恶怪医|救世之瞳|化身博士|炼金王|奇幻香踪|无尽旅途|灵蛊蚀心",
-    "moss_id": 3662
+    "moss_id": 3662,
+    "roles": "3"
   },
   {
     "ename": 167,
@@ -176,7 +191,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "齐天大圣|地狱火|西部大镖客|美猴王|至尊宝|全息碎影|大圣娶亲|零号·赤焰|孙行者|齐天大圣|神迹守卫|无相",
-    "moss_id": 4138
+    "moss_id": 4138,
+    "roles": "2"
   },
   {
     "ename": 549,
@@ -198,7 +214,8 @@
     "hero_type": 4,
     "hero_type2": 1,
     "skin_name": "心魔六耳",
-    "moss_id": 9166
+    "moss_id": 9166,
+    "roles": "2"
   },
   {
     "ename": 120,
@@ -209,7 +226,8 @@
     "new_type": 0,
     "hero_type": 3,
     "skin_name": "最终兵器|白色死神|狰|星夜王子|夜都怪侠|乐园追猎者|苍鳞隐世|死霸装",
-    "moss_id": 3679
+    "moss_id": 3679,
+    "roles": "1"
   },
   {
     "ename": 121,
@@ -220,7 +238,8 @@
     "hero_type": 2,
     "hero_type2": 1,
     "skin_name": "永恒之月|红桃皇后|大秦宣太后|重明|白晶晶|幻夜卜梦|浮光幕影|瑰影绮梦",
-    "moss_id": 3696
+    "moss_id": 3696,
+    "roles": "1|2"
   },
   {
     "ename": 123,
@@ -231,7 +250,8 @@
     "hero_type": 1,
     "hero_type2": 3,
     "skin_name": "无双之魔|圣诞狂欢|天魔缭乱|末日机甲|猎兽之王|野性能量|御风骁将|怒海麟威|遇见神鼓|曦玄引|逐霄战戟",
-    "moss_id": 3713
+    "moss_id": 3713,
+    "roles": "1"
   },
   {
     "ename": 124,
@@ -242,7 +262,8 @@
     "hero_type": 2,
     "hero_type2": 1,
     "skin_name": "铁血都督|海军大将|真爱至上|赤莲之焰|音你心动|雪夜绮愿|熔金海岸|百相守梦|线条小狗",
-    "moss_id": 3784
+    "moss_id": 3784,
+    "roles": "3"
   },
   {
     "ename": 126,
@@ -253,7 +274,8 @@
     "hero_type": 3,
     "hero_type2": 1,
     "skin_name": "不羁之风|战争骑士|乘风破浪|无限飓风号|朔风刀|匿光决锋者|霜北刀",
-    "moss_id": 3730
+    "moss_id": 3730,
+    "roles": "1|5|2"
   },
   {
     "ename": 127,
@@ -263,7 +285,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "洛神降临|冰雪圆舞曲|花好人间|游园惊梦|幽恒|女儿国国王|落雪兰心|至美·化雀舞|雪境奇遇|逆浪荇歌",
-    "moss_id": 3747
+    "moss_id": 3747,
+    "roles": "3"
   },
   {
     "ename": 128,
@@ -274,7 +297,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "鲜血枭雄|超能战警|幽灵船长|死神来了|烛龙|天狼征服者|决胜大满贯",
-    "moss_id": 3765
+    "moss_id": 3765,
+    "roles": "1|2"
   },
   {
     "ename": 129,
@@ -284,7 +308,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "狂战士|黄金武士|穷奇|蓝屏警告|岱宗|铁甲之心|战鼓燎原|铁骨偃魂",
-    "moss_id": 3782
+    "moss_id": 3782,
+    "roles": "2"
   },
   {
     "ename": 130,
@@ -295,7 +320,8 @@
     "hero_type": 1,
     "hero_type2": 4,
     "skin_name": "剑圣|鬼剑武藏|未来纪元|万象初新|地狱之眼|霸王丸|惊梅引|黑崎一护",
-    "moss_id": 3799
+    "moss_id": 3799,
+    "roles": "2"
   },
   {
     "ename": 131,
@@ -305,7 +331,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "青莲剑仙|范海辛|千年之狐|凤求凰|敏锐之力|鸣剑·曳影|诗剑行|碎月剑心|谪仙醉月",
-    "moss_id": 3816
+    "moss_id": 3816,
+    "roles": "2"
   },
   {
     "ename": 132,
@@ -315,7 +342,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "远游之枪|激情绿茵|逐梦之星|暗影游猎|潮玩牛仔|深海之息|山海·玄木吟|妄想实况|星界特工|怪盗基德",
-    "moss_id": 3764
+    "moss_id": 3764,
+    "roles": "4"
   },
   {
     "ename": 133,
@@ -325,7 +353,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "断案大师|锦衣卫|魔术师|超时空战士|阴阳师|鹰眼统帅|万华元夜|星际治安官|神器·狴犴令|绮世丹青",
-    "moss_id": 3781
+    "moss_id": 3781,
+    "roles": "4"
   },
   {
     "ename": 134,
@@ -336,7 +365,8 @@
     "hero_type": 1,
     "hero_type2": 3,
     "skin_name": "拳僧|拳王|大发明家|黄金狮子座|星际陆战队|沙漠行僧|爆烈喵拳",
-    "moss_id": 3798
+    "moss_id": 3798,
+    "roles": "1"
   },
   {
     "ename": 135,
@@ -347,7 +377,8 @@
     "hero_type": 3,
     "hero_type2": 1,
     "skin_name": "霸王|帝国元帅|苍穹之光|海滩派对|职棒王牌|霸王别姬|科学大爆炸|无限倾心|苍威无极|九幽镇关",
-    "moss_id": 3815
+    "moss_id": 3815,
+    "roles": "1|5"
   },
   {
     "ename": 136,
@@ -357,7 +388,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "女帝|东方不败|海洋之心|倪克斯神谕|神器·明辉仪",
-    "moss_id": 3832
+    "moss_id": 3832,
+    "roles": "3"
   },
   {
     "ename": 139,
@@ -367,7 +399,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "万古长明|潮流仙人|圣诞老人|功夫老勺|醍醐杖|航海奇遇记|百相守梦|藏狐·褐绒",
-    "moss_id": 3849
+    "moss_id": 3849,
+    "roles": "1"
   },
   {
     "ename": 140,
@@ -378,7 +411,8 @@
     "hero_type": 1,
     "hero_type2": 3,
     "skin_name": "一骑当千|龙腾万里|天启骑士|冰锋战神|武圣|赤影疾锋|百相守梦|决胜骁骑",
-    "moss_id": 3866
+    "moss_id": 3866,
+    "roles": "1"
   },
   {
     "ename": 141,
@@ -388,7 +422,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "绝世舞姬|异域舞娘|圣诞恋歌|仲夏夜之梦|逐梦之音|猫影幻舞|遇见胡旋|唤灵魅影|幻阙歌|曦玄引|长夏之忆|馥梦繁花",
-    "moss_id": 3883
+    "moss_id": 3883,
+    "roles": "3|1"
   },
   {
     "ename": 142,
@@ -399,7 +434,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "暗夜萝莉|玩偶对对碰|魔法小厨娘|心灵骇客|如懿|时之奇旅|追逃游戏|乘龙聚宝船|酷洛米之心|糖果风暴",
-    "moss_id": 3900
+    "moss_id": 3900,
+    "roles": "3"
   },
   {
     "ename": 144,
@@ -409,7 +445,8 @@
     "new_type": 0,
     "hero_type": 3,
     "skin_name": "热烈之斧|爱与正义|星际陆战队|华尔街大亨|功夫厨神|活力突击|演武夺筹|无双福将|暖冬絮语|群星魔术团",
-    "moss_id": 3917
+    "moss_id": 3917,
+    "roles": "1"
   },
   {
     "ename": 146,
@@ -420,7 +457,8 @@
     "hero_type": 4,
     "hero_type2": 2,
     "skin_name": "月光之女|哥特玫瑰|绯红之刃|紫霞仙子|一生所爱|瓷语鉴心|启示之音|霜月吟|命运加冕",
-    "moss_id": 3934
+    "moss_id": 3934,
+    "roles": "2"
   },
   {
     "ename": 148,
@@ -433,7 +471,8 @@
     "hero_type": 2,
     "skin_name": "太古魔导|时尚教父|炽热元素使|闲日渔趣|天穹之誓|星梦巡礼",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/rebuild/1110jinagziya.html",
-    "moss_id": 3951
+    "moss_id": 3951,
+    "roles": "3|5"
   },
   {
     "ename": 149,
@@ -444,7 +483,8 @@
     "hero_type": 3,
     "hero_type2": 2,
     "skin_name": "双面君主|圣殿之光|德古拉伯爵|夺宝奇兵|虎啸剑宗|剑破天穹",
-    "moss_id": 3978
+    "moss_id": 3978,
+    "roles": "1|5"
   },
   {
     "ename": 150,
@@ -454,7 +494,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "国士无双|街头霸王|教廷特使|白龙吟|逐梦之影|飞衡|傲雪梅枪|弑枪猎影|群星魔术团",
-    "moss_id": 3985
+    "moss_id": 3985,
+    "roles": "2"
   },
   {
     "ename": 152,
@@ -464,7 +505,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "冰雪之华|精灵公主|偶像歌手|凤凰于飞|幻想奇妙夜|乞巧织情|午后时光|星穹之声|映山客|长夜焕生",
-    "moss_id": 4002
+    "moss_id": 4002,
+    "roles": "3|5"
   },
   {
     "ename": 153,
@@ -474,7 +516,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "暗影刀锋|隐刃|暗隐猎兽者|驯魔猎人|默契交锋|金庭之子|影龙天霄|雾影缉谜",
-    "moss_id": 4019
+    "moss_id": 4019,
+    "roles": "2"
   },
   {
     "ename": 154,
@@ -484,7 +527,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "传说之刃|剑舞者|兔女郎|水晶猎龙者|青春决赛季|冠军飞将|瑞麟志|默契交锋|九霄神辉|燃星之曲",
-    "moss_id": 4036
+    "moss_id": 4036,
+    "roles": "1"
   },
   {
     "ename": 156,
@@ -494,7 +538,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "言灵之书|天堂福音|一千零一夜|幽兰居士|黄金白羊座|缤纷绘卷|千筹问战|古海寻踪|灵野札记",
-    "moss_id": 4053
+    "moss_id": 4053,
+    "roles": "3|5"
   },
   {
     "ename": 157,
@@ -505,7 +550,8 @@
     "hero_type": 4,
     "hero_type2": 2,
     "skin_name": "明媚烈焰|魅语|绯月行|花合斗",
-    "moss_id": 4070
+    "moss_id": 4070,
+    "roles": "3"
   },
   {
     "ename": 162,
@@ -515,7 +561,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "鹰之守护|晚萤|前尘镜",
-    "moss_id": 4087
+    "moss_id": 4087,
+    "roles": "2"
   },
   {
     "ename": 163,
@@ -526,7 +573,8 @@
     "hero_type": 4,
     "hero_type2": 1,
     "skin_name": "神梦一刀|修罗|枫霜尽",
-    "moss_id": 4104
+    "moss_id": 4104,
+    "roles": "2|1"
   },
   {
     "ename": 166,
@@ -538,7 +586,8 @@
     "hero_type": 1,
     "hero_type2": 3,
     "skin_name": "圣骑之力|死亡骑士|狮心王|心灵战警|潮玩骑士王|追逃游戏|鸿运当头|动物派对|布丁狗之誓",
-    "moss_id": 4121
+    "moss_id": 4121,
+    "roles": "1|2"
   },
   {
     "ename": 168,
@@ -549,7 +598,8 @@
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "精英酋长|西部大镖客|制霸全明星|御旌|奔雷神使|牛运亨通|星界战将|小牛鸭",
-    "moss_id": 4155
+    "moss_id": 4155,
+    "roles": "5"
   },
   {
     "ename": 169,
@@ -559,7 +609,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "半神之弓|精灵王|阿尔法小队|辉光之辰|黄金射手座|如梦令|圣弓游侠|无尽星芒|完美运算|石田雨龙",
-    "moss_id": 4172
+    "moss_id": 4172,
+    "roles": "4"
   },
   {
     "ename": 170,
@@ -569,7 +620,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "仁德义枪|万事如意|纽约教父|汉昭烈帝|时之恋人|潮玩造梦师|百相守梦|异域游侠|浪漫序章",
-    "moss_id": 4189
+    "moss_id": 4189,
+    "roles": "2"
   },
   {
     "ename": 171,
@@ -580,7 +632,8 @@
     "hero_type": 3,
     "hero_type2": 6,
     "skin_name": "禁血狂兽|五福同心|乱世虎臣|虎魂|百相守梦|兔狲·蓬尾",
-    "moss_id": 4206
+    "moss_id": 4206,
+    "roles": "5"
   },
   {
     "ename": 173,
@@ -590,7 +643,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "王都密探|特种部队|黑猫爱糖果|逐浪之夏|银河之约|飞鸢探春|云中旅人|妄想特派|匿光侦查者|蔬乡物语",
-    "moss_id": 4223
+    "moss_id": 4223,
+    "roles": "4|2"
   },
   {
     "ename": 174,
@@ -600,7 +654,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "森之风灵|加勒比小姐|霸王别姬|凯尔特女王|云霓雀翎|启明星使|无限倾心|神鉴启示录|夏日便利店|愿照·岁时盈|溯影追猎",
-    "moss_id": 4240
+    "moss_id": 4240,
+    "roles": "4"
   },
   {
     "ename": 175,
@@ -611,7 +666,8 @@
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "虚灵城判|地府判官|神迹守卫|驱傩正仪|乐园奇幻夜|虚灵犬护",
-    "moss_id": 4257
+    "moss_id": 4257,
+    "roles": "5"
   },
   {
     "ename": 178,
@@ -621,7 +677,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "根源之目|埃及法老|永曜之星|次元傲视|天秀·启明|潮玩骑兵|破阵·退雄兵",
-    "moss_id": 4291
+    "moss_id": 4291,
+    "roles": "1|2"
   },
   {
     "ename": 183,
@@ -632,7 +689,8 @@
     "hero_type": 1,
     "hero_type2": 4,
     "skin_name": "圣域余晖|战争女神|冰冠公主|神奇女侠|单词大作战|黎明之约|潮玩士官长",
-    "moss_id": 4308
+    "moss_id": 4308,
+    "roles": "2"
   },
   {
     "ename": 184,
@@ -644,7 +702,8 @@
     "hero_type": 6,
     "hero_type2": 2,
     "skin_name": "天籁弦音|蔷薇王座|奇迹圣诞|舞动绿茵|繁星吟游|花朝如约|电玩·兔顽号|夏日便利店|愿照·福禄聚|奇遇梦乡",
-    "moss_id": 4325
+    "moss_id": 4325,
+    "roles": "5"
   },
   {
     "ename": 186,
@@ -655,7 +714,8 @@
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "炼金大师|圆桌骑士|饕餮|华丽摇滚|劲辣红锅|谧流熔炉",
-    "moss_id": 4342
+    "moss_id": 4342,
+    "roles": "5"
   },
   {
     "ename": 180,
@@ -666,7 +726,8 @@
     "hero_type": 1,
     "hero_type2": 3,
     "skin_name": "桀骜炎枪|三太子|逐梦之翼|次元突破|雪上飞焰|热血海滩",
-    "moss_id": 4359
+    "moss_id": 4359,
+    "roles": "1|2"
   },
   {
     "ename": 190,
@@ -676,7 +737,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "绝代智谋|星航指挥官|黄金分割率|武陵仙君|掌控之力|时雨天司|星域神启|鹤羽星尊|天机白泽",
-    "moss_id": 4376
+    "moss_id": 4376,
+    "roles": "3|2"
   },
   {
     "ename": 192,
@@ -686,7 +748,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "燃魂重炮|芝加哥教父|烈魂|火炮绅士|怒海冲锋",
-    "moss_id": 4393
+    "moss_id": 4393,
+    "roles": "4"
   },
   {
     "ename": 191,
@@ -697,7 +760,8 @@
     "hero_type": 6,
     "hero_type2": 2,
     "skin_name": "沧海之曜|伊势巫女|守护之力|猫狗日记|白蛇|白鹤梁神女|挚爱花嫁|时之奇旅|乘龙忆丹青|绒语心约",
-    "moss_id": 4410
+    "moss_id": 4410,
+    "roles": "5|3"
   },
   {
     "ename": 187,
@@ -708,7 +772,8 @@
     "hero_type": 6,
     "hero_type2": 2,
     "skin_name": "噬灭日蚀|东海龙王|逐梦之光|灼幽烈阳|噬灭天穹|金福满堂",
-    "moss_id": 4427
+    "moss_id": 4427,
+    "roles": "5|1"
   },
   {
     "ename": 182,
@@ -718,7 +783,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "淬命双剑|第七人偶|冰霜恋舞曲|久胜战神|真爱魔法|胡桃夹子|画中仙|雾都夜雨|千山共赴",
-    "moss_id": 4444
+    "moss_id": 4444,
+    "roles": "3"
   },
   {
     "ename": 189,
@@ -729,7 +795,8 @@
     "hero_type": 6,
     "hero_type2": 2,
     "skin_name": "万物有灵|阿摩司公爵|幻乐之宴|原初探秘者|五谷丰年|天穹祈灯|克喵|谜偶窥秘",
-    "moss_id": 4461
+    "moss_id": 4461,
+    "roles": "5"
   },
   {
     "ename": 193,
@@ -740,7 +807,8 @@
     "hero_type": 1,
     "hero_type2": 3,
     "skin_name": "破灭刃锋|龙域领主|曙光守护者|青龙志|绛天战甲|银白咏叹调|琥珀纪元|冥王哈迪斯",
-    "moss_id": 3564
+    "moss_id": 3564,
+    "roles": "2|1"
   },
   {
     "ename": 196,
@@ -751,7 +819,8 @@
     "hero_type": 5,
     "hero_type2": 4,
     "skin_name": "静谧之眼|绝影神枪|特工魅影|朱雀志|碎云|真我赫兹|雪豹·霜爪",
-    "moss_id": 4478
+    "moss_id": 4478,
+    "roles": "4"
   },
   {
     "ename": 195,
@@ -761,7 +830,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "嚣狂之镰|威尼斯狂欢|白虎志|原初追逐者|热力回旋|超元猎域|百相守梦",
-    "moss_id": 4495
+    "moss_id": 4495,
+    "roles": "2"
   },
   {
     "ename": 194,
@@ -772,7 +842,8 @@
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "不屈铁壁|爱与和平|坚韧之力|玄武志|千军破阵|春野闲踪",
-    "moss_id": 4521
+    "moss_id": 4521,
+    "roles": "5|1"
   },
   {
     "ename": 198,
@@ -783,7 +854,8 @@
     "hero_type": 3,
     "hero_type2": 2,
     "skin_name": "入梦之灵|美梦成真|胖达荣荣|天降福星|顽趣",
-    "moss_id": 4529
+    "moss_id": 4529,
+    "roles": "1|2"
   },
   {
     "ename": 179,
@@ -793,7 +865,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "至高创世|尼罗河女神|朔望之晖|补天|愿照·千秋盛",
-    "moss_id": 4546
+    "moss_id": 4546,
+    "roles": "3"
   },
   {
     "ename": 501,
@@ -803,7 +876,8 @@
     "new_type": 0,
     "hero_type": 6,
     "skin_name": "灵魂劫卜|占星术士|虹云星官|疑决卦|吟游魔法|夜落电台|景韶洛都",
-    "moss_id": 4563
+    "moss_id": 4563,
+    "roles": "5"
   },
   {
     "ename": 199,
@@ -813,7 +887,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "幻舞玲珑|花间舞|蜜橘之夏|无限星赏官|祈雪灵祝|玉兔公主|记忆之芯|离恨烟|云诺千山|涂山容容",
-    "moss_id": 4580
+    "moss_id": 4580,
+    "roles": "4"
   },
   {
     "ename": 176,
@@ -823,7 +898,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "风华霓裳|霓裳曲|遇见飞天|寅虎·心曲|银翎春语",
-    "moss_id": 4597
+    "moss_id": 4597,
+    "roles": "3|5|2"
   },
   {
     "ename": 502,
@@ -833,7 +909,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "六合虎拳|街头霸王|梅西|天狼狩猎者|李小龙|寅虎·赤拳|擒涛扼浪|祥瑞亨通",
-    "moss_id": 3581
+    "moss_id": 3581,
+    "roles": "2"
   },
   {
     "ename": 197,
@@ -843,7 +920,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "天元之弈|踏雪寻梅|混沌棋|滕王阁序|炽奕燎原|万物之道|守夜人",
-    "moss_id": 3598
+    "moss_id": 3598,
+    "roles": "3"
   },
   {
     "ename": 503,
@@ -857,7 +935,8 @@
     "hero_type2": 3,
     "skin_name": "战车意志|命运角斗场|御狮|特工战影|电玩高手|龙之律动",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/rebuild/0413kt.html",
-    "moss_id": 3615
+    "moss_id": 3615,
+    "roles": "1"
   },
   {
     "ename": 504,
@@ -867,7 +946,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "筑城者|精准探案法|御霄|胡桃异想国|契约魔法|完美假期|怪诞之夜",
-    "moss_id": 3632
+    "moss_id": 3632,
+    "roles": "3"
   },
   {
     "ename": 125,
@@ -877,7 +957,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "无间傀儡|午夜歌剧院|云间偶戏|无心|诡秘之主",
-    "moss_id": 3649
+    "moss_id": 3649,
+    "roles": "1"
   },
   {
     "ename": 510,
@@ -888,7 +969,8 @@
     "hero_type": 3,
     "hero_type2": 1,
     "skin_name": "光明之海|海之征途|猫狗日记|末日机甲|挚爱之约|乘龙淬吴钩|时之奇旅|百相守梦",
-    "moss_id": 3666
+    "moss_id": 3666,
+    "roles": "1|2"
   },
   {
     "ename": 137,
@@ -899,7 +981,8 @@
     "hero_type": 4,
     "hero_type2": 2,
     "skin_name": "寂灭之心|魇语军师|暗渊魔法|九山相柳",
-    "moss_id": 3683
+    "moss_id": 3683,
+    "roles": "2|3"
   },
   {
     "ename": 509,
@@ -910,7 +993,8 @@
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "无尽之盾|极冰防御线|御銮|圆桌骑士|梦圆繁星",
-    "moss_id": 3700
+    "moss_id": 3700,
+    "roles": "5"
   },
   {
     "ename": 508,
@@ -920,7 +1004,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "破魔之箭|花见巫女|箭羽风息|太华|天狼溯光者|炽翼辉光|琥珀纪元",
-    "moss_id": 3717
+    "moss_id": 3717,
+    "roles": "4"
   },
   {
     "ename": 312,
@@ -930,7 +1015,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "爆弹怪猫|棒球奇才|鲨炮海盗猫|星空之诺|月团寄思|大漠名商|匿光破解者|龙舞盛年|鸭鸭历险记",
-    "moss_id": 3734
+    "moss_id": 3734,
+    "roles": "3"
   },
   {
     "ename": 507,
@@ -940,7 +1026,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "谋世之战|灼热之刃|一念神魔|山海·炽霜斩",
-    "moss_id": 3751
+    "moss_id": 3751,
+    "roles": "1"
   },
   {
     "ename": 513,
@@ -950,7 +1037,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "惊鸿之笔|修竹墨客|梁祝|天狼绘梦者|神器·万象笔|妄想奇谈|群星魔术团",
-    "moss_id": 4614
+    "moss_id": 4614,
+    "roles": "3"
   },
   {
     "ename": 515,
@@ -962,7 +1050,8 @@
     "hero_type": 2,
     "hero_type2": 1,
     "skin_name": "寒月公主|露花倒影|如梦令|拒霜思|暖冬·兔眠|漠中幻影",
-    "moss_id": 4631
+    "moss_id": 4631,
+    "roles": "3|1|2"
   },
   {
     "ename": 511,
@@ -972,7 +1061,8 @@
     "new_type": 0,
     "hero_type": 3,
     "skin_name": "无忧猛士|年年有余|西部大镖客|猪悟能|潮玩探月行",
-    "moss_id": 4648
+    "moss_id": 4648,
+    "roles": "1|2"
   },
   {
     "ename": 529,
@@ -982,7 +1072,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "破晓之神|创世神祝|重装意志|冰霜神祇|经纬探寻者|敬我三分|撼世英歌",
-    "moss_id": 4665
+    "moss_id": 4665,
+    "roles": "2|1"
   },
   {
     "ename": 505,
@@ -993,7 +1084,8 @@
     "hero_type": 6,
     "hero_type2": 2,
     "skin_name": "鹿灵守心|森|遇见神鹿|时之祈愿|时之愿境|山海·碧波行|真我赫兹|拾光映像|大耳狗之梦",
-    "moss_id": 4682
+    "moss_id": 4682,
+    "roles": "5"
   },
   {
     "ename": 506,
@@ -1003,7 +1095,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "流云之翼|荷鲁斯之眼|纤云弄巧|时之祈愿|群星魔术团",
-    "moss_id": 4699
+    "moss_id": 4699,
+    "roles": "2"
   },
   {
     "ename": 522,
@@ -1014,7 +1107,8 @@
     "hero_type": 1,
     "hero_type2": 4,
     "skin_name": "星辰之子|归虚梦演|云鹰飞将|李逍遥|海·苍雷引",
-    "moss_id": 4716
+    "moss_id": 4716,
+    "roles": "2|1"
   },
   {
     "ename": 518,
@@ -1024,7 +1118,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "冷晖之枪|幸存者|神威|无双飞将|琥珀纪元|访茗客",
-    "moss_id": 433
+    "moss_id": 433,
+    "roles": "1|2"
   },
   {
     "ename": 523,
@@ -1034,7 +1129,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "幻纱之灵|归虚梦演|诗语江南|游龙清影|玲珑珍味|至美·乘鲤谣|雪境奇遇|续相思|织梦人",
-    "moss_id": 4750
+    "moss_id": 4750,
+    "roles": "3"
   },
   {
     "ename": 525,
@@ -1045,7 +1141,8 @@
     "hero_type": 6,
     "hero_type2": 3,
     "skin_name": "神匠|归虚梦演|乓乓大师|匿光启智者|探海日志",
-    "moss_id": 3768
+    "moss_id": 3768,
+    "roles": "5"
   },
   {
     "ename": 524,
@@ -1055,7 +1152,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "烈炮小子|归虚梦演|狂想玩偶喵|龙鼓争鸣|胡桃狂想曲|百解令|顽岩魄",
-    "moss_id": 4767
+    "moss_id": 4767,
+    "roles": "4"
   },
   {
     "ename": 531,
@@ -1065,7 +1163,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "破镜之刃|冰刃幻境|炽阳神光|匿光追影者|玫瑰异探|真我赫兹|青焰无极",
-    "moss_id": 4784
+    "moss_id": 4784,
+    "roles": "2"
   },
   {
     "ename": 527,
@@ -1075,7 +1174,8 @@
     "new_type": 0,
     "hero_type": 3,
     "skin_name": "秩序统将|秩序猎龙将|蔚蓝守将|荣光圣徽|苍云破阵",
-    "moss_id": 4801
+    "moss_id": 4801,
+    "roles": "1"
   },
   {
     "ename": 533,
@@ -1085,7 +1185,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "山林之子|熊喵少女|顽趣|江河有灵|布丁狗之约",
-    "moss_id": 3785
+    "moss_id": 3785,
+    "roles": "2|4"
   },
   {
     "ename": 536,
@@ -1095,7 +1196,8 @@
     "new_type": 0,
     "hero_type": 1,
     "skin_name": "玫瑰剑士|永昼|浮生妄",
-    "moss_id": 3802
+    "moss_id": 3802,
+    "roles": "1"
   },
   {
     "ename": 528,
@@ -1106,7 +1208,8 @@
     "hero_type": 4,
     "hero_type2": 1,
     "skin_name": "鲨之猎刃|孤猎|赏金猎手|电玩·雷克斯|逐花归海|愿照·九州拓",
-    "moss_id": 3819
+    "moss_id": 3819,
+    "roles": "2"
   },
   {
     "ename": 537,
@@ -1117,7 +1220,8 @@
     "hero_type": 1,
     "hero_type2": 2,
     "skin_name": "雷霆之王|启蛰|地狱燃心|愿照·山河定",
-    "moss_id": 3836
+    "moss_id": 3836,
+    "roles": "1|2"
   },
   {
     "ename": 155,
@@ -1127,7 +1231,8 @@
     "new_type": 0,
     "hero_type": 5,
     "skin_name": "精灵之舞|女武神|陌上桑",
-    "moss_id": 3853
+    "moss_id": 3853,
+    "roles": "4"
   },
   {
     "ename": 538,
@@ -1138,7 +1243,8 @@
     "hero_type": 1,
     "hero_type2": 4,
     "skin_name": "燎原之心|赤焰之缨|鹤归松栖|幻光神枪|赞萌露比",
-    "moss_id": 3870
+    "moss_id": 3870,
+    "roles": "2"
   },
   {
     "ename": 540,
@@ -1148,7 +1254,8 @@
     "new_type": 0,
     "hero_type": 2,
     "skin_name": "渡世行者|前尘|唐三藏",
-    "moss_id": 3887
+    "moss_id": 3887,
+    "roles": "3|5"
   },
   {
     "ename": 542,
@@ -1158,7 +1265,8 @@
     "new_type": 0,
     "hero_type": 4,
     "skin_name": "玉城之子|碧珀绯影|星界游侠|埋骨钱|朽木白哉",
-    "moss_id": 4818
+    "moss_id": 4818,
+    "roles": "2"
   },
   {
     "ename": 534,
@@ -1169,7 +1277,8 @@
     "hero_type": 6,
     "hero_type2": 2,
     "skin_name": "萤火之旅|画中游|海盐诗旅|奇遇星旅|鸣野蒿|线条小狗",
-    "moss_id": 4835
+    "moss_id": 4835,
+    "roles": "5"
   },
   {
     "ename": 548,
@@ -1181,7 +1290,8 @@
     "hero_type": 5,
     "skin_name": "沙海飞舟|危途狂花|驭风魔法|玫蓝誓约",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0622geya.html",
-    "moss_id": 4852
+    "moss_id": 4852,
+    "roles": "4"
   },
   {
     "ename": 521,
@@ -1193,7 +1303,8 @@
     "hero_type": 2,
     "skin_name": "永夜之心|幻泉雾影|浮梦罗烟|王牌新星|金乌负日",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0915haiyue.html",
-    "moss_id": 4937
+    "moss_id": 4937,
+    "roles": "3"
   },
   {
     "ename": 544,
@@ -1205,7 +1316,8 @@
     "hero_type": 1,
     "skin_name": "自在之心|太极少年|鹤归松栖",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/1202zhz.html",
-    "moss_id": 5122
+    "moss_id": 5122,
+    "roles": "2|1|5"
   },
   {
     "ename": 545,
@@ -1217,7 +1329,8 @@
     "hero_type": 5,
     "skin_name": "火鹰船长|西部游侠|末日机甲|踏浪烽翎",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0103laixiao.html",
-    "moss_id": 5138
+    "moss_id": 5138,
+    "roles": "4"
   },
   {
     "ename": 564,
@@ -1229,7 +1342,8 @@
     "hero_type": 1,
     "skin_name": "武道奇才|零食大作战|妄想食味|战舞者|飞车小橘子|小满鸭",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0413jixiaoman.html",
-    "moss_id": 5753
+    "moss_id": 5753,
+    "roles": "1"
   },
   {
     "ename": 514,
@@ -1242,7 +1356,8 @@
     "hero_type2": 3,
     "skin_name": "追忆之刃|破局者|落雪白狼|破空之剑",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0627yalian.html",
-    "moss_id": 5560
+    "moss_id": 5560,
+    "roles": "1"
   },
   {
     "ename": 159,
@@ -1255,7 +1370,8 @@
     "hero_type2": 2,
     "skin_name": "人鱼之歌|金色潮汐|心动手记|幻珠鲛人",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/1103duoliya.html",
-    "moss_id": 6177
+    "moss_id": 6177,
+    "roles": "5"
   },
   {
     "ename": 563,
@@ -1268,7 +1384,8 @@
     "hero_type2": 2,
     "skin_name": "命运之引|时空谍影|心动手记",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/1130hainuo.html",
-    "moss_id": 6387
+    "moss_id": 6387,
+    "roles": "3|1"
   },
   {
     "ename": 519,
@@ -1280,7 +1397,8 @@
     "hero_type": 5,
     "skin_name": "凌霄真龙",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0206aoyin.html",
-    "moss_id": 6367
+    "moss_id": 6367,
+    "roles": "4"
   },
   {
     "ename": 517,
@@ -1292,7 +1410,8 @@
     "hero_type": 1,
     "skin_name": "肃归之戈|暗都幽影|东方月初|死亡执政官",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0328dasiming.html",
-    "moss_id": 6836
+    "moss_id": 6836,
+    "roles": "2|1"
   },
   {
     "ename": 582,
@@ -1304,7 +1423,8 @@
     "hero_type": 2,
     "skin_name": "万妙之心",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0627yuanliuzhizi.html",
-    "moss_id": 7211
+    "moss_id": 7211,
+    "roles": "3"
   },
   {
     "ename": 581,
@@ -1316,7 +1436,8 @@
     "hero_type": 3,
     "skin_name": "止戈之道",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0627yuanliuzhizi.html",
-    "moss_id": 7194
+    "moss_id": 7194,
+    "roles": "1|2"
   },
   {
     "ename": 577,
@@ -1328,7 +1449,8 @@
     "hero_type": 6,
     "skin_name": "聆愿之祝|涂山红红|灵卦秘语",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0810shaosiyuan.html",
-    "moss_id": 7513
+    "moss_id": 7513,
+    "roles": "5"
   },
   {
     "ename": 558,
@@ -1340,7 +1462,8 @@
     "hero_type": 1,
     "skin_name": "黯羽东君|魅影绮裳",
     "m_bl_link": "https://pvp.qq.com/ingame/all/tobe/newheros/0927ying.html",
-    "moss_id": 8554
+    "moss_id": 8554,
+    "roles": "1|2"
   },
   {
     "ename": 177,
@@ -1353,7 +1476,8 @@
     "hero_type": 5,
     "skin_name": "苍狼末裔|维京掠夺者|苍林狼骑",
     "m_bl_link": "//pvp.qq.com/ingame/all/tobe/rebuild/1225c.html",
-    "moss_id": 4274
+    "moss_id": 4274,
+    "roles": "4|2"
   },
   {
     "ename": 550,
@@ -1365,7 +1489,8 @@
     "hero_type": 6,
     "skin_name": "笑面诡手|戏梦巡演",
     "m_bl_link": "//pvp.qq.com/ingame/all/tobe/newheros/0327kongkonger.html",
-    "moss_id": 8693
+    "moss_id": 8693,
+    "roles": "5"
   },
   {
     "ename": 584,
@@ -1377,7 +1502,8 @@
     "hero_type": 5,
     "skin_name": "沉舟之志",
     "m_bl_link": "//pvp.qq.com/ingame/all/tobe/newheros/0627yuanliuzhizi.html",
-    "moss_id": 8744
+    "moss_id": 8744,
+    "roles": "4"
   },
   {
     "ename": 151,
@@ -1389,7 +1515,8 @@
     "hero_type": 5,
     "skin_name": "定旌之谋",
     "m_bl_link": "//pvp.qq.com/ingame/all/tobe/newheros/0703sunquan.html",
-    "moss_id": 7004
+    "moss_id": 7004,
+    "roles": "4"
   },
   {
     "ename": 172,
@@ -1401,7 +1528,8 @@
     "hero_type": 1,
     "skin_name": "五兵之主|极光幻客",
     "m_bl_link": "//pvp.qq.com/ingame/all/tobe/newheros/chicha.html",
-    "moss_id": 7123
+    "moss_id": 7123,
+    "roles": "1|2"
   },
   {
     "ename": 585,
@@ -1413,7 +1541,8 @@
     "hero_type": 6,
     "skin_name": "守望之诺",
     "m_bl_link": "//pvp.qq.com/ingame/all/tobe/newheros/0627yuanliuzhizi.html",
-    "moss_id": 8820
+    "moss_id": 8820,
+    "roles": "5"
   },
   {
     "ename": 188,
@@ -1426,7 +1555,8 @@
     "hero_type2": 3,
     "skin_name": "鼎镇山河",
     "m_bl_link": "//pvp.qq.com/ingame/all/tobe/newheros/dayu.html",
-    "moss_id": 9389
+    "moss_id": 9389,
+    "roles": "5"
   },
   {
     "ename": 583,
@@ -1438,6 +1568,7 @@
     "hero_type": 6,
     "skin_name": "破局之识",
     "m_bl_link": "//pvp.qq.com/ingame/all/tobe/newheros/0627yuanliuzhizi.html",
-    "moss_id": 9132
+    "moss_id": 9132,
+    "roles": "2"
   }
 ]
