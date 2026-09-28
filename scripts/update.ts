@@ -72,128 +72,120 @@ async function processHeroes() {
     const heroJsonPath = path.join(DATA_DIR, `hero/${ename}.json`);
     const heroImgPath = path.join(DATA_DIR, `hero/${ename}.jpg`);
 
-    // Incremental check: if both JSON and Image exist, skip
-    // Unless a specific target ID was provided, then force update for that ID?
-    // User asked for incremental, so we skip if exists.
-    // If user manually runs with ID, they probably want to update it.
-    const isTargeted = !!targetHeroId;
-    if (
-      !isTargeted &&
-      (await fs.pathExists(heroJsonPath)) &&
-      (await fs.pathExists(heroImgPath))
-    ) {
-      // console.log(`Skipping hero ${cname} (${ename}) - already exists`);
-      continue;
-    }
-
+    // Re-fetch hero info on every run so upstream edits are picked up;
+    // unchanged files produce no git diff, keeping commits and the
+    // downstream KV sync incremental.
     console.log(`Processing hero: ${cname} (${ename})`);
 
-    // 1. Download Avatar
-    if (!(await fs.pathExists(heroImgPath)) || isTargeted) {
-      const avatarUrl = `https://game.gtimg.cn/images/yxzj/img201606/heroimg/${ename}/${ename}.jpg`;
-      await downloadFile(avatarUrl, heroImgPath);
-    }
+    const avatarUrl = `https://game.gtimg.cn/images/yxzj/img201606/heroimg/${ename}/${ename}.jpg`;
+    await downloadFile(avatarUrl, heroImgPath);
 
-    // 2. Fetch Detail
-    if (!(await fs.pathExists(heroJsonPath)) || isTargeted) {
-      const detailUrl = `https://pvp.qq.com/web201605/herodetail/m/${id_name}.html`;
-      try {
-        const html = await fetchHtml(detailUrl);
-        const $ = cheerio.load(html);
+    const detailUrl = `https://pvp.qq.com/web201605/herodetail/m/${id_name}.html`;
+    try {
+      const html = await fetchHtml(detailUrl);
+      const $ = cheerio.load(html);
 
-        // Attributes based on list order as per note
-        // 1: Survival, 2: Attack, 3: Skill, 4: Difficulty
-        const survivalSpan = $(
-          ".hero-cover .cover-list li:nth-child(1) span",
-        ).attr("class");
-        const attackSpan = $(
-          ".hero-cover .cover-list li:nth-child(2) span",
-        ).attr("class");
-        const skillSpan = $(
-          ".hero-cover .cover-list li:nth-child(3) span",
-        ).attr("class");
-        const difficultySpan = $(
-          ".hero-cover .cover-list li:nth-child(4) span",
-        ).attr("class");
+      // Attributes based on list order as per note
+      // 1: Survival, 2: Attack, 3: Skill, 4: Difficulty
+      const survivalSpan = $(
+        ".hero-cover .cover-list li:nth-child(1) span",
+      ).attr("class");
+      const attackSpan = $(
+        ".hero-cover .cover-list li:nth-child(2) span",
+      ).attr("class");
+      const skillSpan = $(
+        ".hero-cover .cover-list li:nth-child(3) span",
+      ).attr("class");
+      const difficultySpan = $(
+        ".hero-cover .cover-list li:nth-child(4) span",
+      ).attr("class");
 
-        const heroTypeMap: any = {
-          1: "战士",
-          2: "法师",
-          3: "坦克",
-          4: "刺客",
-          5: "射手",
-          6: "辅助",
-        };
-        let occupation = heroTypeMap[hero.hero_type] || "";
+      const heroTypeMap: any = {
+        1: "战士",
+        2: "法师",
+        3: "坦克",
+        4: "刺客",
+        5: "射手",
+        6: "辅助",
+      };
+      let occupation = heroTypeMap[hero.hero_type] || "";
 
-        // If mapped value is empty, try parsing HTML (though list data should be reliable)
-        if (!occupation) {
-          occupation = $(".hero-location").text().trim();
-          if (occupation.includes("游戏职业：")) {
-            occupation = occupation.replace("游戏职业：", "");
-          } else {
-            // Fallback: try to find element with text "游戏职业："
-            const occupationEl = $('*:contains("游戏职业：")').last();
-            if (occupationEl.length > 0) {
-              occupation = occupationEl.text().trim().replace("游戏职业：", "");
-            }
+      // If mapped value is empty, try parsing HTML (though list data should be reliable)
+      if (!occupation) {
+        occupation = $(".hero-location").text().trim();
+        if (occupation.includes("游戏职业：")) {
+          occupation = occupation.replace("游戏职业：", "");
+        } else {
+          // Fallback: try to find element with text "游戏职业："
+          const occupationEl = $('*:contains("游戏职业：")').last();
+          if (occupationEl.length > 0) {
+            occupation = occupationEl.text().trim().replace("游戏职业：", "");
           }
         }
-
-        const heroDetail: any = {
-          ename,
-          cname,
-          title: $(".hero-title").text().trim(),
-          occupation,
-          attributes: {
-            survival: survivalSpan?.match(/hero-attr1-(\d+)/)?.[1],
-            attack: attackSpan?.match(/hero-attr2-(\d+)/)?.[1],
-            skill: skillSpan?.match(/hero-attr3-(\d+)/)?.[1],
-            difficulty: difficultySpan?.match(/hero-attr4-(\d+)/)?.[1],
-          },
-          skins:
-            $(".hero-skin")
-              .data("imgname")
-              ?.toString()
-              .split("|")
-              .map((s: string) => {
-                const parts = s.split("&");
-                return { name: parts[0], id: parts[1] };
-              }) || [],
-          skills: [],
-        };
-
-        // Skills
-        // Icons: .plus-tab li img src
-        // Info: .plus-content li
-        const skillIcons: string[] = [];
-        $(".plus-tab li img").each((i: number, el: any) => {
-          skillIcons.push($(el).attr("src") || "");
-        });
-
-        $(".plus-content li").each((i: number, el: any) => {
-          const name = $(el).find(".plus-name").text().trim();
-          if (!name) return; // Skip empty skills
-
-          const value = $(el).find(".plus-value").text().trim(); // (冷却值：... 消耗：...)
-          const desc = $(el).find(".plus-int").text().trim();
-          const tip = $(el).find(".prompt").text().trim();
-
-          heroDetail.skills.push({
-            name,
-            cooldownAttributes: value,
-            description: desc,
-            tips: tip,
-            icon: skillIcons[i] ? `https:${skillIcons[i]}` : "",
-          });
-        });
-
-        await fs.outputJson(heroJsonPath, heroDetail, { spaces: 2 });
-      } catch (err: any) {
-        console.error(
-          `Error processing hero detail for ${cname}: ${err.message}`,
-        );
       }
+
+      const heroDetail: any = {
+        ename,
+        cname,
+        title: $(".hero-title").text().trim(),
+        occupation,
+        attributes: {
+          survival: survivalSpan?.match(/hero-attr1-(\d+)/)?.[1],
+          attack: attackSpan?.match(/hero-attr2-(\d+)/)?.[1],
+          skill: skillSpan?.match(/hero-attr3-(\d+)/)?.[1],
+          difficulty: difficultySpan?.match(/hero-attr4-(\d+)/)?.[1],
+        },
+        skins:
+          $(".hero-skin")
+            .data("imgname")
+            ?.toString()
+            .split("|")
+            .map((s: string) => {
+              const parts = s.split("&");
+              return { name: parts[0], id: parts[1] };
+            }) || [],
+        skills: [],
+      };
+
+      // Skills
+      // Icons: .plus-tab li img src
+      // Info: .plus-content li
+      const skillIcons: string[] = [];
+      $(".plus-tab li img").each((i: number, el: any) => {
+        skillIcons.push($(el).attr("src") || "");
+      });
+
+      $(".plus-content li").each((i: number, el: any) => {
+        const name = $(el).find(".plus-name").text().trim();
+        if (!name) return; // Skip empty skills
+
+        const value = $(el).find(".plus-value").text().trim(); // (冷却值：... 消耗：...)
+        const desc = $(el).find(".plus-int").text().trim();
+        const tip = $(el).find(".prompt").text().trim();
+
+        heroDetail.skills.push({
+          name,
+          cooldownAttributes: value,
+          description: desc,
+          tips: tip,
+          icon: skillIcons[i] ? `https:${skillIcons[i]}` : "",
+        });
+      });
+
+      // Guard against clobbering good data when the page structure changes
+      if (
+        !heroDetail.title ||
+        !heroDetail.attributes.survival ||
+        heroDetail.skills.length === 0
+      ) {
+        throw new Error("unexpected page structure");
+      }
+
+      await fs.outputJson(heroJsonPath, heroDetail, { spaces: 2 });
+    } catch (err: any) {
+      console.error(
+        `Error processing hero detail for ${cname}: ${err.message}`,
+      );
     }
   }
 }
