@@ -2,7 +2,7 @@ name: Sync HOK Data to Cloudflare KV
 
 on:
   workflow_run:
-    workflows: ["crawl"]
+    workflows: ["Crawl HOK Data"]
     types:
       - completed
   workflow_dispatch:
