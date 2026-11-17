@@ -1,0 +1,48 @@
+{
+  "ename": 646,
+  "cname": "刀锋宝贝",
+  "title": "绝命锋影",
+  "occupation": "刺客",
+  "attributes": {
+    "survival": "4",
+    "attack": "5",
+    "skill": "6",
+    "difficulty": "4"
+  },
+  "skins": [
+    {
+      "name": "绝命锋影",
+      "id": "0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "刺杀",
+      "cooldownAttributes": "(冷却值：0 消耗：0)",
+      "description": "刀锋宝贝击杀英雄获得2层印记，助攻或者击杀野怪和兵线获得1层，3层印记时下个释放的技能不进入冷却",
+      "tips": "小提示：利用印记层数刷新技能，做到快速刷野以及双大进场收割",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/64600.png"
+    },
+    {
+      "name": "半月斩",
+      "cooldownAttributes": "(冷却值：7(-0.3/Lv) 消耗：0)",
+      "description": "刀锋宝贝对附近敌人造成物理伤害 (每多击中一个敌人，伤害提升25%) 同时获得护盾(持续2秒)，期间获得移速(不断衰减)",
+      "tips": "小提示：尽量多命中敌人，增加技能的额外伤害",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/64610.png"
+    },
+    {
+      "name": "掷刀术",
+      "cooldownAttributes": "(冷却值：7(-0.3/Lv) 消耗：0)",
+      "description": "刀锋宝贝对前方敌人造成]物理伤害，首个敌人受到伤害增加50%并减少移速(持续1.5秒) 击中敌人获得攻速和暴击率(最多2层，持续4秒)",
+      "tips": "小提示：先叠加技能层数，获得高额暴击和攻速再进场收割",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/64620.png"
+    },
+    {
+      "name": "暗杀术",
+      "cooldownAttributes": "(冷却值：20(-2/Lv） 消耗：0)",
+      "description": "刀锋宝贝跳向指定目标，造成物理伤害并将其标记(持续4秒)，如果目标已被标记会附带已损生命真实伤害，期间自身受到敌方英雄的普攻伤害降低25% 普攻命中标记单位减少【半月斩】和【掷刀术】1秒冷却，若目标死亡，立即重置【暗杀术】，若标记单位为英雄，对该英雄造成伤害的35%转化为回复",
+      "tips": "小提示：利用好击杀敌人刷新大招CD和回复生命的机制，达到快速进场收割的效果",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/64630.png"
+    }
+  ]
+}
