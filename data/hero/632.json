@@ -1,0 +1,48 @@
+{
+  "ename": 632,
+  "cname": "绯泪",
+  "title": "猩红之刺",
+  "occupation": "战士",
+  "attributes": {
+    "survival": "3",
+    "attack": "3",
+    "skill": "2",
+    "difficulty": "4"
+  },
+  "skins": [
+    {
+      "name": "猩红之刺",
+      "id": "0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "血吻",
+      "cooldownAttributes": "(冷却值：0 消耗：0)",
+      "description": "普攻命中敌人叠加1层印记，叠满4层后对自身周围外圈内的敌人造成物理伤害并获得回复，同时减少技能冷却 释放时立即解除控制效果，期间可以移动并获得霸体",
+      "tips": "小提示：团战前可以通过平A小兵或野怪积攒被动 方便进场能够快速打出被动效果",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/632/63200.png"
+    },
+    {
+      "name": "刺骨",
+      "cooldownAttributes": "(冷却值：7.5(-0.3/Lv) 消耗：0)",
+      "description": "绯泪朝指定方向造成两段交错的伤害，对路径上的敌人造成物理伤害和减速(持续1秒)，若敌人被两段伤害同时击中将会受到晕眩（持续1秒) 击中敌方英雄可以叠加印记",
+      "tips": "小提示：二技能勾住目标后再使用1技能能够大幅提高两段命中率",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/632/63210.png"
+    },
+    {
+      "name": "缠魂",
+      "cooldownAttributes": "(冷却值：10(-0.4/Lv) 消耗：0)",
+      "description": "绯泪掷出武器，推开近端并拉近远端敌人，分别造成物理伤害，同时附带减速(持续1秒)和晕眩(持续0.5秒) 击中敌方英雄可以叠加印记",
+      "tips": "小提示：将敌人推开和拉近到一个点，有利于提高被动的命中率",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/632/63220.png"
+    },
+    {
+      "name": "夺命",
+      "cooldownAttributes": "(冷却值：25(-2.5/Lv) 消耗：0)",
+      "description": "绯泪跳向指定位置并对前方扇形范围内的敌人造成真实伤害 若击中敌方英雄自身获得攻击力和物理穿透(持续6秒，【夺命】或【血吻】每多击中一个英雄额外增加2秒)",
+      "tips": "小提示：敌方站位较集中时使用，能够最大化攻击力和穿透增益效果的持续时间",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/632/63230.png"
+    }
+  ]
+}

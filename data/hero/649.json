@@ -1,0 +1,48 @@
+{
+  "ename": 649,
+  "cname": "皮皮",
+  "title": "飞毛球",
+  "occupation": "辅助",
+  "attributes": {
+    "survival": "3",
+    "attack": "1",
+    "skill": "5",
+    "difficulty": "4"
+  },
+  "skins": [
+    {
+      "name": "飞毛球",
+      "id": "0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "胖嘟嘟",
+      "cooldownAttributes": "(冷却值：0 消耗：0)",
+      "description": "皮皮在使用二、三技能变胖之后获得25%减伤",
+      "tips": "小提示：",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/649/64900.png"
+    },
+    {
+      "name": "恶狠狠",
+      "cooldownAttributes": "(冷却值：5(-0.2/Lv) 消耗：40)",
+      "description": "皮皮朝指定方向发射子弹，对目标造成法术伤害和晕眩(持续0.5秒) 子弹命中时与附近的目标连接在一起，若没有可连接的敌人，则对目标造成极限减速(持续1.5秒) 若成功连接另一名目标，则每0.5秒对原目标造成法术伤害(最多持续4秒)，连接期间，任意目标受到伤害，都将按60%比例传递至另一目标，当连接目标距离过远时，将立即断开连接",
+      "tips": "小提示：",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/649/64910.png"
+    },
+    {
+      "name": "气吞吞",
+      "cooldownAttributes": "(冷却值：9(-0.4/Lv) 消耗：55)",
+      "description": "皮皮对敌方造成减速(持续0.5秒)，1秒后将前方范围内友军英雄和小兵吸入肚子中(最多持续4秒)，期间自身减速50% 皮皮周围的友方英雄和被吸入后释放的友方英雄，获得护盾(持续3秒)，皮皮每吸入一个单位可获得回复 吸入过程中，皮皮处于霸体状态，若提前终止吸入过程，可返还30%冷却",
+      "tips": "小提示：",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/649/64920.png"
+    },
+    {
+      "name": "圆滚滚",
+      "cooldownAttributes": "(冷却值：40(-4/Lv) 消耗：110)",
+      "description": "皮皮向指定方向【滚动】加速自身(最多持续4秒) 【滚动】期间，皮皮处于霸体状态，对沿途敌人造成法术伤害和击飞(持续1秒)，结束时将对范围内的敌人造成减速(持续3秒)，若滚动过程中触碰到地形，则发生一次反弹并加速自身 再次点击该技能可以提前结束滚动】状态，并根据已滚动时间返还冷却",
+      "tips": "小提示：",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/649/64930.png"
+    }
+  ]
+}
